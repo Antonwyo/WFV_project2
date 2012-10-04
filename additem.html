@@ -26,7 +26,7 @@
 								<li><input type="checkbox" checked value="Action" id="action" /><label for="action">Action</label></li>
 								<li><input type="checkbox" checked value="RPG" id="rpg"/><label for="rpg">RPG</label></li>
 								<li><input type="checkbox" checked value="Strategy" id="strategy" /><label for="strategy">Strategy</label></li>
-								<li><input type="checkbox" checked value="Simulation" id="simulation" /><label for="simulation">simulation</label></li>
+								<li><input type="checkbox" checked value="Simulation" id="simulation" /><label for="simulation">Simulation</label></li>
 								<li><input type="checkbox" checked value="Racing" id="racing" /><label for="racing">Racing</label></li>
 								<li><input type="checkbox" checked value="MMO" id="mmo" /><label for="mmo">MMO</label></li>
 							</ul>
@@ -51,8 +51,8 @@
 									<ul>
 										<label for = "Priority">Priority of the game</label>
 										<select id="Priority">
-											<optgroup lable="importance">
-										  	<option value="0">0<option>
+											 <optgroup lable="importance">
+										  	<!--<option value="0">0<option>
 												<option value="1">1<option>
 												<option value="2">2<option>
 												<option value="3">3<option>
@@ -62,8 +62,8 @@
 												<option value="7">7<option>
 												<option value="8">8<option>
 												<option value="9">9<option>
-											<option value="10">10<option>
-										</select>
+												<option value="10">10<option>
+										</select> -->
 									</ul>
 
 
@@ -74,9 +74,12 @@
 								</ul>		
 
 				</fieldset>
+		<input type="Add Game" value="Add A Game" id="Add Game"/><br/>
 		</form>
-					<button>Add Game</button>
 
-		<a href="#">Clear data</a> <a href="#">Display data</a>
+		<a href="#" id = "clear"> Clear Stored Data</a>
+		<a href="#" id = "displayLink">Display Data</a>
+
+		<script src=js/main.js type="text/javascript"></script>
 	</body>
 </html>
