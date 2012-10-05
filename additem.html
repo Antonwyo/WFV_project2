@@ -4,6 +4,7 @@
 		<meta charset ="utf-8">
 		<meta name="viewport" content="user-scalable=no, width=device-width"/>
 		<link href="styles.css" rel="stylesheet" type="text/css">
+		<script src="main.js" type="text/javascript"></script>
 	</head>
 	<body>
 			<h1>Add A Game </h1>
@@ -20,39 +21,39 @@
 
 				<fieldset>
 					<legend>Game Info</legend>
-					<ul>
+				
 						<li class="gameinfo">Game type:</li>
 							<ul>
-								<li><input type="checkbox" checked value="Action" id="action" /><label for="action">Action</label></li>
-								<li><input type="checkbox" checked value="RPG" id="rpg"/><label for="rpg">RPG</label></li>
-								<li><input type="checkbox" checked value="Strategy" id="strategy" /><label for="strategy">Strategy</label></li>
-								<li><input type="checkbox" checked value="Simulation" id="simulation" /><label for="simulation">Simulation</label></li>
-								<li><input type="checkbox" checked value="Racing" id="racing" /><label for="racing">Racing</label></li>
-								<li><input type="checkbox" checked value="MMO" id="mmo" /><label for="mmo">MMO</label></li>
+								<li><input type="checkbox" checked value="Action" id="action" name="gametype" /><label for="action">Action</label></li>
+								<li><input type="checkbox" checked value="RPG" id="rpg" name="gametype" /><label for="rpg">RPG</label></li>
+								<li><input type="checkbox" checked value="Strategy" id="strategy" name="gametype" /><label for="strategy">Strategy</label></li>
+								<li><input type="checkbox" checked value="Simulation" id="simulation" name="gametype" /><label for="simulation">Simulation</label></li>
+								<li><input type="checkbox" checked value="Racing" id="racing" name="gametype" /><label for="racing">Racing</label></li>
+								<li><input type="checkbox" checked value="MMO" id="mmo" name="gametype" /><label for="mmo">MMO</label></li>
 							</ul>
 
 						<li class="gameinfo">Game Category:</li>
 							<ul>
 								<li><input type="checkbox" cheked value="Co-op" id ="Co-op" name="category" /><label for="Co-op">Co-op</label></li>
-								<li><input type="checkbox" cheked value="Multy-player" id ="multy-player" name="multy-player" /><label for="multy-player">Multy-player</label></li>
+								<li><input type="checkbox" cheked value="Multy-player" id ="multy-player" name="category" /><label for="multy-player">Multy-player</label></li>
 								<li><input type="checkbox" cheked value="Single-player" id ="single-player" name="category" /><label for="single-player">Single-player</label></li>
 							</ul>
 
 							<li class="gameinfo">Console:</li>
 								<ul>
-									<li><input type="radio" cheked value="XBox" id ="XBox" name="Console" /><label for="XBox">XBox</label></li>
-									<li><input type="radio" cheked value="PS3" id ="PS3" name="Console" /><label for="PS3">PS3</label></li>
-									<li><input type="radio" cheked value="PC" id ="PC" name="Console" /><label for="PC">PC</label></li>
-									<li><input type="radio" cheked value="Wii" id ="Wii" name="Console" /><label for="Wii">Wii</label></li>
-									<li><input type="radio" cheked value="MAC" id ="MAC" name="Console" /><label for="MAC">MAC</label></li>
+									<li><input type="radio" cheked value="XBox" id ="XBox" name="console" /><label for="XBox">XBox</label></li>
+									<li><input type="radio" cheked value="PS3" id ="PS3" name="console" /><label for="PS3">PS3</label></li>
+									<li><input type="radio" cheked value="PC" id ="PC" name="console" /><label for="PC">PC</label></li>
+									<li><input type="radio" cheked value="Wii" id ="Wii" name="console" /><label for="Wii">Wii</label></li>
+									<li><input type="radio" cheked value="MAC" id ="MAC" name="console" /><label for="MAC">MAC</label></li>
 								</ul>
 
-							<li class="gameinfo">Priority:</li>
-									<ul>
+							<li id="gameinfos">Priority:</li>
+									<!--<ul>
 										<label for = "Priority">Priority of the game</label>
 										<select id="Priority">
 											 <optgroup lable="importance">
-										  	<!--<option value="0">0<option>
+										  	<option value="0">0<option>
 												<option value="1">1<option>
 												<option value="2">2<option>
 												<option value="3">3<option>
@@ -63,8 +64,8 @@
 												<option value="8">8<option>
 												<option value="9">9<option>
 												<option value="10">10<option>
-										</select> -->
-									</ul>
+										</select>
+									</ul> -->
 
 
 							<li class="gameinfo">Aditional Info</li>
@@ -74,12 +75,12 @@
 								</ul>		
 
 				</fieldset>
-		<input type="Add Game" value="Add A Game" id="Add Game"/><br/>
+		<input type="submit" value="Add A Game" id="submit"/><br/>
 		</form>
 
 		<a href="#" id = "clear"> Clear Stored Data</a>
 		<a href="#" id = "displayLink">Display Data</a>
 
-		<script src=js/main.js type="text/javascript"></script>
+
 	</body>
 </html>
