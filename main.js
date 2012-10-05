@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", function(){
 function makeChoises (){
 	var formTag = document.getElementsByTagName("form")
 		selectLi = $('gameinfos'),
-		makeGameinfo = document.createElement('gameinfos');
+		makeGameinfo = document.createElement('select');
 		makeGameinfo.setAttribute("id","groups");
 	for (var i = 0, j = priorityGroups.length; i<j; i++){
 		var makeOption = document.createElement('option');
@@ -47,19 +47,23 @@ function getCheckboxCategory(){
 		item.rday 			=["Relise date:",$('rday').value];
 		item.aat 			=["Available at:",$('aat').value];
 		item.pri 			=["Price:",$('pri').value];
+		item.console 		=["Console:", consoleValue];
+		item.priority 		=["Priority:",$('gameinfos').value];
 
 /*		item.gametype 			=["Game name:",$('gname').value];
 		item.category 			=["Game name:",$('gname').value];
-		item.console 			=["Game name:",$('gname').value];
-		item.priority 			=["Game name:",$('gname').value];*/
+*/
 
 		localStorage.setItem(id, JSON.stringify(item));
 		alert("Game added");
 	}
 
+/*	function getData(){
+		makeDiv = document.createElement('div');
+	}*/
+
 	var priorityGroups = ["1","2","3","4","5","6","7","8","9","10"],
-		consoleValue
-	; 
+		consoleValue; 
 	makeChoises();
 
 	// //click events
