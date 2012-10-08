@@ -38,3 +38,7 @@ a{
 	padding: 10px;
 	background-color: #ffcc99;
 }
+
+select{
+	font-size: 20px;
+}
